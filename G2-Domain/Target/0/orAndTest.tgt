@@ -1,0 +1,8 @@
+if (true && true){
+print(2);
+}
+if (true && false){
+print(1);
+}
+else { print(0);
+}

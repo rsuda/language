@@ -1,0 +1,99 @@
+
+digraph "declarationTest"
+{
+struct1 [label="StmtList"]
+struct2 [label="Stmt"]
+struct3 [label="Dec"]
+struct4 [label="int"]
+struct3->struct4
+struct5 [label="identifier"]
+struct6 [label="x"]
+struct5->struct6
+struct3->struct5
+struct2->struct3
+struct7 [label=";"]
+struct2->struct7
+struct1->struct2
+struct8 [label="StmtList"]
+struct9 [label="Stmt"]
+struct10 [label="Assign"]
+struct11 [label="identifier"]
+struct12 [label="x"]
+struct11->struct12
+struct10->struct11
+struct13 [label="="]
+struct10->struct13
+struct14 [label="Expr"]
+struct15 [label="LogOr"]
+struct16 [label="LogAnd"]
+struct17 [label="LogEq"]
+struct18 [label="RelOp"]
+struct19 [label="AddOp"]
+struct20 [label="MulOp"]
+struct21 [label="UnaryOp"]
+struct22 [label="ExpOp"]
+struct23 [label="Base"]
+struct24 [label="Value"]
+struct25 [label="integer"]
+struct26 [label="9"]
+struct25->struct26
+struct24->struct25
+struct23->struct24
+struct22->struct23
+struct21->struct22
+struct20->struct21
+struct19->struct20
+struct18->struct19
+struct17->struct18
+struct16->struct17
+struct15->struct16
+struct14->struct15
+struct10->struct14
+struct9->struct10
+struct27 [label=";"]
+struct9->struct27
+struct8->struct9
+struct28 [label="StmtList"]
+struct29 [label="Stmt"]
+struct30 [label="Print"]
+struct31 [label="print"]
+struct30->struct31
+struct32 [label="("]
+struct30->struct32
+struct33 [label="Expr"]
+struct34 [label="LogOr"]
+struct35 [label="LogAnd"]
+struct36 [label="LogEq"]
+struct37 [label="RelOp"]
+struct38 [label="AddOp"]
+struct39 [label="MulOp"]
+struct40 [label="UnaryOp"]
+struct41 [label="ExpOp"]
+struct42 [label="Base"]
+struct43 [label="identifier"]
+struct44 [label="x"]
+struct43->struct44
+struct42->struct43
+struct41->struct42
+struct40->struct41
+struct39->struct40
+struct38->struct39
+struct37->struct38
+struct36->struct37
+struct35->struct36
+struct34->struct35
+struct33->struct34
+struct30->struct33
+struct45 [label=")"]
+struct30->struct45
+struct29->struct30
+struct46 [label=";"]
+struct29->struct46
+struct28->struct29
+struct47 [label="StmtList"]
+struct48 [label="epsilon"]
+struct47->struct48
+struct28->struct47
+struct8->struct28
+struct1->struct8
+}
